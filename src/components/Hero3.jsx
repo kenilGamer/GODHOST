@@ -96,7 +96,7 @@ function Hero3() {
         Choose a plan that fits for you
       </h1>
       <p className='text-center max-w-full mx-auto px-2 ddd'>
-        Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed.
+        Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We`re here to help you succeed.
       </p>
 
       {isMobile ? (
