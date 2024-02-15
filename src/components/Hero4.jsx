@@ -50,14 +50,15 @@ const Hero4 = () => {
         buttonTitle="Join Discord"
         image="/src/assets/imgs/about1.png"
         className="hero-section-1"
-        show={true}
+        show={false}
       />
       <HeroSection
+      buttonTitle="join discord"
         title="Global server location"
         description="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
         image="/src/assets/imgs/about2.png"
         className="hero-section-2 hero-section-reverse"
-        show={false}
+        show={true}
       />
       
     </div>

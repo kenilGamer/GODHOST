@@ -3,7 +3,7 @@
 import React from 'react';
 import Button from './Button';
 
-const HeroSection = ({ title, description, image, buttonTitle, className }) => {
+const HeroSection = ({ title, description, image, buttonTitle, className,show }) => {
   return (
     <div className={`hero-section ${className}`}>
         <div className="hero-section-image flex items-center justify-center">
@@ -14,7 +14,7 @@ const HeroSection = ({ title, description, image, buttonTitle, className }) => {
           {title}
         </h1>
         <p>{description}</p>
-        <Button title={buttonTitle} />
+        {show === true ? <a href="/dd"><Button title={buttonTitle} /></a> : null }
       </div>
       
     </div>

@@ -63,7 +63,7 @@ function App() {
       });
     });
   return (
-    <div className='w-full min-h-screen bg-[#2d0a31] text-white overflow-x-hidden'>
+    <div className='w-full min-h-screen select-none bg-[#2d0a31] text-white overflow-x-hidden'>
       <Navbar timeline={tl} />
       <Hero1 timeline={tl} />
       <Hero2/>
