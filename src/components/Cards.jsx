@@ -9,8 +9,8 @@ function Cards({ data }) {
       <div className='flex items-center justify-center'>
         <img src={data.url} alt="ss" />
       </div>
-      <div className='flex flex-col items-center max-md:w-full h-full justify-between text-white gap-10 text-center'>
-        <h1 className="text-3xl font-bold">{data.title}</h1>
+      <div className='flex flex-col dd items-center max-md:w-full h-full justify-between text-white gap-10 text-center'>
+        <h1 className="text-3xl ">{data.title}</h1>
         <p>{data.chat}</p>
       </div>
 

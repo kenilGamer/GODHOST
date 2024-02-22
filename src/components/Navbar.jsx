@@ -21,7 +21,7 @@ function Navbar({ timeline }) {
             alt=""
           />
         </h1>
-        <h1 className='text-xl font-semibold'>GODCRAFT</h1>
+        <h1 className='text-xl dd'>GODCRAFT</h1>
       </div>
 
       {/* Responsive Menu Button */}
@@ -33,14 +33,14 @@ function Navbar({ timeline }) {
       <div className=''>
       <div className={`flex flex-col md:flex-row gap-4 items-center nav uppercase ${isMobileMenuOpen ? 'hidden' : 'block'}`}>
         {["Home", "PACKAGES", "HELP", "CONTACT"].map((item, index) => (
-          <a className='text-sm font-semibold' href={`#${item}`} key={index}>
+          <a className='text-sm dd' href={`#${item}`} key={index}>
             {item}
           </a>
         ))}
-        <a href="#">
+        <a href="/signup">
           <Button className="nav" />
         </a>
-        <a href="#" className='font-semibold uppercase'>Sign in</a>
+        {/* <a href="#" className='dd uppercase'>Sign in</a> */}
       </div>
       </div>
       </div>

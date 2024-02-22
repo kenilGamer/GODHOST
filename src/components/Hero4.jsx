@@ -43,13 +43,13 @@ const Hero4 = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen add flex flex-col p-5 md:p-20">
+    <div className="w-full dd min-h-screen add flex flex-col p-5 md:p-20">
       <HeroSection
         title="Dedicated support"
         description="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
         buttonTitle="Join Discord"
         image="/src/assets/imgs/about1.png"
-        className="hero-section-1"
+        className="hero-section-1 mb-5"
         show={false}
       />
       <HeroSection
@@ -57,7 +57,7 @@ const Hero4 = () => {
         title="Global server location"
         description="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
         image="/src/assets/imgs/about2.png"
-        className="hero-section-2 hero-section-reverse"
+        className="hero-section-2 hero-section-reverse "
         show={true}
       />
       

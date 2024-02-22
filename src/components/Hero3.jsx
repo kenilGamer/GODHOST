@@ -12,13 +12,13 @@ function Hero3() {
   let data = [
     {
       url: "/src/assets/imgs/price1.svg",
-      title: "𝙸𝙽𝚃𝙴𝙻-𝙿𝙻𝙰𝙽𝚂",
+      title: "INTEL-PLANS",
       money: "350",
       list: ['8 Gb ram ', '200% CPU', '4 backups', '35 gb storage']
     },
     {
       url: "/src/assets/imgs/price2.svg",
-      title: "𝚁𝙰𝚈𝚉𝙴𝙽-𝙿𝙻𝙰𝙽𝚂",
+      title: "RAYZER-plans",
       money: "599",
       list: ['8 Gb ram ', '100% CPU', '4 backups', '25 gb storage']
     },
@@ -91,8 +91,8 @@ function Hero3() {
   };
 
   return (
-    <div className='max-w-screen-xl h-[200vh] ss flex flex-col gap-10 mx-auto py-20 mt-20 px-5 md:px-10'>
-      <h1 className='text-center text-3xl md:text-5xl ddd tracking-tight uppercase font-bold '>
+    <div className='max-w-screen-xl dd h-[200vh] ss flex flex-col gap-10 mx-auto py-20 mt-20 px-5 md:px-10'>
+      <h1 className='text-center text-3xl md:text-5xl ddd tracking-wider uppercase  '>
         Choose a plan that fits for you
       </h1>
       <p className='text-center max-w-full mx-auto px-2 ddd'>
@@ -112,7 +112,7 @@ function Hero3() {
         // Render grid for larger screens
         <div
           ref={container}
-          className={` md:flex gap-10 max-md:w-[100vw] items-center md:flex-row py-8 shop1 justify-between ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
+          className={` md:flex dd gap-10 max-md:w-[100vw] items-center md:flex-row py-8 shop1 justify-between ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
             <Shop key={index} data={item} />

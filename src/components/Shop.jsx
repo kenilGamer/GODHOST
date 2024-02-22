@@ -19,8 +19,8 @@ function Shop({ data }) {
         <img src={data.url} alt="" />
       </div>
       <div className='text-center flex flex-col overflow-hidden gap-5'>
-        <h1 className='text-3xl text-[#4c1e51] font-semibold'>{data.title}</h1>
-        <p className='text-2xl font-semibold text-[#4c1e51]'>${data.money} / <span className='text-xs'>month</span></p>
+        <h1 className='text-3xl text-[#4c1e51] '>{data.title}</h1>
+        <p className='text-2xl  text-[#4c1e51]'>${data.money} / <span className='text-xs'>month</span></p>
         {data.list.map((item) => (
           <span key={item}>{item}</span>
         ))}

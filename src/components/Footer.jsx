@@ -4,9 +4,9 @@ import Button from './Button'
 
 function footer() {
   return (
-    <div className='w-full min-h-[50vh] flex max-md:flex-col justify-between items-center bg-[#3b1440] text-white  '>
+    <div className='w-full min-h-[50vh] flex max-md:flex-col justify-between items-center dd bg-[#3b1440] text-white  '>
         <div className='flex flex-col w-6/12 justify-center items-center gap-1'>
-            <div className='flex max-md:flex-col gap-3 text-3xl font-semibold items-center py-7 px-20'>
+            <div className='flex max-md:flex-col gap-3 text-3xl  items-center py-7 px-20'>
                 <img src="/src/assets/imgs/logo.png" width={"50vw"} alt="" />
                 <h1>GODCRAFT</h1>
             </div>
@@ -20,7 +20,7 @@ function footer() {
         </div>
         <div className='flex flex-col w-4/12 justify-center items-center '>
             <div className='flex flex-col justify-center items-center  gap-4'>
-                <a className='text-3xl font-semibold' >Company</a>
+                <a className='text-3xl ' >Company</a>
                 <a className='hover:text-fuchsia-600' href="#">Why choose us</a>
                 <a className='hover:text-fuchsia-600' href="#">Review</a>
                 <a className='hover:text-fuchsia-600' href="#">Customers</a>
@@ -30,7 +30,7 @@ function footer() {
         </div>
         <div className='flex flex-col w-4/12 justify-center items-center '>
             <div className='flex flex-col justify-center items-center  gap-4'>
-                <a className='text-3xl font-semibold' >Products</a>
+                <a className='text-3xl' >Products</a>
                 <a className='hover:text-fuchsia-600' href="#">Why choose us</a>
                 <a className='hover:text-fuchsia-600' href="#">Review</a>
                 <a className='hover:text-fuchsia-600' href="#">Customers</a>
@@ -40,7 +40,7 @@ function footer() {
         </div>
         <div className='flex flex-col w-4/12 justify-center items-center '>
             <div className='flex flex-col justify-center items-center  gap-4'>
-                <a className='text-3xl font-semibold' >Support</a>
+                <a className='text-3xl ' >Support</a>
                 <a className='hover:text-fuchsia-600' href="#">Technology</a>
                 <a className='hover:text-fuchsia-600' href="#">Products</a>
                 <a className='hover:text-fuchsia-600' href="#">Customers</a>

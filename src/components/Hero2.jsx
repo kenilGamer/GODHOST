@@ -63,7 +63,7 @@ function Hero2() {
   return (
   <div ref={container} className='mt-52 max-md:w-[100vw] max-w-screen-xl m-auto ssss py-20 max-md:px-0 px-10 h-full'>
     <div className='text-center mb-10'>
-      <h1 className='text-6xl font-extrabold font-mono uppercase'>Most amazing features</h1>
+      <h1 className='text-6xl  uppercase dd'>Most amazing features</h1>
     </div>
     <div className='flex items-center gap-y-10 justify-between max-md:w-[110vw] max-md:flex-col flex-wrap'>
       {data.map((itme,index)=>(<Cards key={index} data={itme} />))}
