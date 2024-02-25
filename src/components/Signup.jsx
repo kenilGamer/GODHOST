@@ -10,18 +10,14 @@ function Signup() {
             <form action="#" method="post" className="flex flex-col text-black font-mono gap-y-2 w-96 mt-10">
                 <label htmlFor="name"  className='text-white' >Name: </label>
                 <input className='p-1' type="text" name="name" id="name" required placeholder="Your Name"/>
-
                 <label htmlFor="name"  className='text-white' >username: </label>
                 <input className='p-1' type="text" name="name" id="name" required placeholder="username"/>
-
                 <label htmlFor="email" className='text-white' >Email: </label>
                 <input className='p-1' type="email" name="email" id="email" required placeholder="your@email.com"/>
-
                 <label htmlFor="password" className='text-white' >Password: </label>
                 <input className='p-1' type="password" name="password" minLength={8} maxLength={300} id="password" required placeholder="**********"/>
-
                 <label htmlFor="password" className='text-white' >config Password: </label>
-                <input className='p-1' type="password" name="password" minLength={8} autoCorrect='' maxLength={300} id="password" required placeholder="**********"/>
+                <input className='p-1' type="password" name="password" minLength={8} autoCorrect='password' maxLength={300} id="password" required placeholder="**********"/>
                 <div className='flex'>
                 <button type="submit" className=" text-white py-2 px-4 rounded"><Button/></button>  
                 <h1 className='flex items-center text-white dd'>or</h1>                            
