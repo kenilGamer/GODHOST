@@ -12,7 +12,7 @@ function Navbar({ timeline }) {
   };
 
   return (
-    <div className='w-full m-auto py-5 flex max-md:items-start fixed justify-between z-50 items-center px-5 md:px-20'>
+    <div className='w-full m-auto py-5 flex max-md:items-start fixed justify-between z-50 items-center px-5 max-md:px-20'>
       <div className='flex gap-1 items-center'>
         <h1>
           <img

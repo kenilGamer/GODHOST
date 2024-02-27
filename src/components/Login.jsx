@@ -1,13 +1,33 @@
-import React, { useState } from 'react'
-import Button from './Button'
+import React, { useState } from 'react';
+import Button from './Button';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-    axios
-  };
   const [email, setEmail] = useState('');
-  const [password,setPassword] = useState("")
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:3000/login', {
+        email,
+        password,
+      });
+
+      if (response.data.message) {
+        alert(response.data.message);
+        navigate("/");
+      } else {
+        alert('Wrong credentials');
+      }
+    } catch (error) {
+      console.error('Error logging in:', error.response ? error.response.data : error.message);
+      // Handle error (e.g., display error message to the user)
+    }
+  };
   return (
     
     <div className='w-full dd h-screen flex items-center object-cover p-10 justify-center'>
