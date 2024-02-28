@@ -51,7 +51,8 @@ function Hero2() {
              scroll: "body",
              trigger: container.current,
              start: 'top 10%', // Adjust the start position as needed
-             end: 'top 20%',  // Adjust the end position as needed
+             end: 'top 20%',
+             target:"body",  // Adjust the end position as needed
              scrub: 1,
              // markers: true,
             //  pin: true

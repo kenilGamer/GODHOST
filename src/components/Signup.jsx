@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import axios from 'axios';
-
+import { useNavigate } from 'react-router-dom';
 function Signup() {
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -20,10 +20,16 @@ function Signup() {
         password,
         confirmPassword,
       });
-
+      if (response.data.message) {
+        alert(response.data.message);
+        navigate("/");
+      } else {
+        alert('Wrong credentials');
+      }
       console.log(response.data); 
     } catch (error) {
       console.error('Error signing up:', error.response ? error.response.data : error.message);
+      alert(error.toString(error.response ? error.response.data : error.message));
     }
   };
 

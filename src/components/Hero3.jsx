@@ -62,6 +62,7 @@ function Hero3() {
         trigger: ".ss",
         start: "top 30%",
         end: "top 10%",
+        target:"body",  // Adjust the end position as needed
         scrub: 3,
       }
     });
@@ -76,8 +77,9 @@ function Hero3() {
         trigger: container.current,
         start: 'top 10%',
         end: 'top -50%',
+        target:"body",  // Adjust the end position as needed
         scrub: 3,
-        pin: true
+        pin: true,
       },
     });
   });
@@ -85,8 +87,8 @@ function Hero3() {
   // Slider settings for mobile view
   const sliderSettings = {
     dots: true,
-    infinite: true,
-    speed: 500,
+    infinite: false,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
