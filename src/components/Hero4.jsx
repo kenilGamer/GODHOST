@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';

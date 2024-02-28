@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useRef } from 'react'
 import Cards from './Cards'
 import { useGSAP } from '@gsap/react';

@@ -21,7 +21,7 @@ function Signup() {
         confirmPassword,
       });
 
-      console.log(response.data); // You can handle the response as needed
+      console.log(response.data); 
     } catch (error) {
       console.error('Error signing up:', error.response ? error.response.data : error.message);
     }

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useRef, useState, useEffect } from 'react';
 import Shop from './Shop';
 import Slider from 'react-slick';
@@ -68,14 +67,16 @@ function Hero3() {
     });
 
     gsap.from(container.current, {
-      transform: "translateX(110%)",
-      duration: 3,
+      // transform: "translateX(110%)",
+      x: "+=110%",
+      // rotation: 20,
+      // duration: 1,
       stagger: 0.5,
       scrollTrigger: {
         trigger: container.current,
         start: 'top 10%',
         end: 'top -50%',
-        scrub: 5,
+        scrub: 3,
         pin: true
       },
     });

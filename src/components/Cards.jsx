@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import img from '../assets/imgs/about1.png'
 function Cards({ data }) {

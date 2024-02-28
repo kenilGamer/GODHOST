@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React from 'react'
 
 function Button({ title = "sign up", width, onClick, disabled, color = 'pink', fontSize = 'text-xs' }) {

@@ -35,10 +35,10 @@ function Login() {
       <div className='z-50 text-white p-10 flex flex-col gap-10'>
         <h1 className="text-6xl max-md:text-xl mt-5 text-center">Login</h1>
         <form action="#" method="post" onSubmit={handleSubmit} className="flex flex-col text-black font-mono gap-y-2 w-96 max-md:w-52  mt-1">
-        
+{/*         
           <label htmlFor="username" className='text-white'>Username: </label>
           <input className='p-1' type="text" name="username" id="username" required placeholder="username" />
-          
+           */}
           <label htmlFor="email" className='text-white'>Email: </label>
           <input className='p-1' type="email" name="email" id="email" onChange={ e => setEmail(e.target.value)} required placeholder="your@email.com" />
           

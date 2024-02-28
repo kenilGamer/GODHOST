@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import heroImage from '../assets/imgs/hero_right.png';
 import Button from './Button';

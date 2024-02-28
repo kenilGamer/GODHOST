@@ -1,11 +1,9 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import Button from './Button';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-function Shop({ data,ref }) {
+function Shop({ data }) {
     gsap.registerPlugin(ScrollTrigger);
     const container = useRef();
     useGSAP(() => {
@@ -14,7 +12,7 @@ function Shop({ data,ref }) {
       });
 
   return (
-    <div ref={ref} className='w-[25vw] max-md:w-full  p-2 flex flex-col overflow-hidden items-center gap-5 shop rounded-md'>
+    <div className='w-[25vw] max-md:w-full  p-2 flex flex-col overflow-hidden items-center gap-5 shop rounded-md'>
       <div className='flex items-center justify-center p-10'>
         <img src={data.url} alt="" />
       </div>

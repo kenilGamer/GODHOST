@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import Button from './Button';
 import { useGSAP } from '@gsap/react';
@@ -13,7 +11,7 @@ function Navbar({ timeline }) {
 
   return (
     <div className='w-full m-auto py-5 flex max-md:items-start fixed justify-between z-50 items-center px-5 max-md:px-20'>
-      <div className='flex gap-1 items-center'>
+      <div className='flex gap-1 nav1 items-center'>
         <h1>
           <img
             src="https://github.com/kenilGamer/GOD_APP/blob/main/public/images/img1.png?raw=true"
