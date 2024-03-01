@@ -33,8 +33,11 @@
 .fonts{
   font-family: "Holtwood One SC";
 }
+.button2{
+  transition: all 3s
+}
 .button2:hover{
-  
+  border: none;
   background: linear-gradient(to  top, #a271fd 25%,#e270ff );
 }
 

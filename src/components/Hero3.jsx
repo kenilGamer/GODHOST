@@ -13,26 +13,30 @@ function Hero3() {
       url: "/src/assets/imgs/price1.svg",
       title: "INTEL-PLANS",
       money: "350",
-      list: ['8 Gb ram ', '200% CPU', '4 backups', '35 gb storage']
+      list: ['8 Gb ram ', '200% CPU', '4 backups', '35 gb storage'],
+      id: "intel"
     },
     {
       url: "/src/assets/imgs/price2.svg",
       title: "RAYZER-plans",
       money: "599",
-      list: ['8 Gb ram ', '100% CPU', '4 backups', '25 gb storage']
+      list: ['8 Gb ram ', '100% CPU', '4 backups', '25 gb storage'],
+      id: "rayzer"
     },
     {
       url: "/src/assets/imgs/price3.svg",
       title: "WEB-PLANS",
       money: "450",
-      list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage']
+      list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],
+      id: "websites"
     },
-    {
-      url: "/src/assets/imgs/price1.svg",
-      title: "BOTS-PLANS",
-      money: "150",
-      list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage']
-    },
+    // {
+    //   url: "/src/assets/imgs/price1.svg",
+    //   title: "BOTS-PLANS",
+    //   money: "150",
+    //   list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],
+    //   id: "bots"
+    // },
   ];
   gsap.registerPlugin(ScrollTrigger);
   const container = useRef();
@@ -54,22 +58,22 @@ function Hero3() {
 
   useGSAP(() => {
     gsap.from(".ss .ddd", {
-      opacity: 0,
-      duration: 1,
-      yPercent: -100,
-      ease: 'power1.inOut',
+      // opacity: 0,
+      // duration: 1,
+      // yPercent: -100,
+      ease: 'elastic',
       scrollTrigger: {
         trigger: ".ss",
         start: "top 30%",
         end: "top 10%",
         target:"body",  // Adjust the end position as needed
-        scrub: 3,
+        scrub: 5,
       }
     });
 
     gsap.from(container.current, {
       // transform: "translateX(110%)",
-      x: "+=110%",
+      x: "+=100%",
       // rotation: 20,
       // duration: 1,
       stagger: 0.5,
@@ -115,10 +119,10 @@ function Hero3() {
         // Render grid for larger screens
         <div
         ref={container}
-          className={` md:flex dd gap-10 max-md:w-[100vw] items-center md:flex-row py-8 shop1 justify-between ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
+          className={`flex dd gap-5 items-center md:flex-row py-10  shop1 justify-center ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
-            <Shop key={index}  data={item} />
+            <Shop key={index} title={"more info"}  data={item} />
           ))}
         </div>
       )}

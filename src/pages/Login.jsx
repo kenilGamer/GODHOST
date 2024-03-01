@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button';
+import Button from '../components/Button';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -48,7 +48,7 @@ function Login() {
             <a href='/forward'>forward password?</a>
           </div>
           <div className='flex max-md:flex-col justify-center items-center gap-x-2'>
-            <button type="submit"  className="text-white rounded"><Button onClick={handleSubmit} title='login'  /></button>
+            <button type="submit"   className="text-white rounded"><Button onClick={handleSubmit} title='login'  /></button>
             <h1 className='flex items-center text-center justify-center text-white dd'>or</h1>
             <a href='/signup' className="text-white rounded"><Button title='signup' /></a>
           </div>

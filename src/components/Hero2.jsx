@@ -43,7 +43,7 @@ function Hero2() {
      useGSAP(() => {
          gsap.from(container.current, {
            opacity:0,
-           // x:100,
+          //  x:100,
           //  transform:"translateX(390%)",
            duration: 3,
           //  stagger:0.5,
@@ -53,7 +53,7 @@ function Hero2() {
              start: 'top 10%', // Adjust the start position as needed
              end: 'top 20%',
              target:"body",  // Adjust the end position as needed
-             scrub: 1,
+             scrub: 2,
              // markers: true,
             //  pin: true
            },

@@ -13,7 +13,7 @@ function footer() {
             <p>Subscribe our newsletter to get updates about our services</p>
             </div>
             <div className='flex flex-col  gap-3 mb-6'>
-                <button className='px-5 text-sm uppercase button2 duration-700 py-3 border-2 rounded-full border-[#695cae] '>Email Address</button>
+                <button className='px-5 text-xs uppercase button2 duration-1000 py-3 border-2 rounded-full border-[#695cae]  '>Email Address</button>
                 <Button title='Subscribe'/>
             </div>
         </div>
