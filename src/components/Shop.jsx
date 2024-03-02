@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-function Shop({ data,title = "#" }) {
+function Shop({ data,title = "#",w}) {
     gsap.registerPlugin(ScrollTrigger);
     const container = useRef();
     useGSAP(() => {
@@ -12,7 +12,7 @@ function Shop({ data,title = "#" }) {
       });
 
   return (
-    <div className='min-w-56  max-md:w-screen py-2 flex flex-col justify-center overflow-hidden items-center gap-5 shop rounded-md'>
+    <div className= {`w-[${w}] max-md:w-screen py-2 px-2 flex flex-col justify-center overflow-hidden items-center gap-5 shop rounded-md`}>
       <div className='flex items-center justify-center p-5'>
         <img src={data?.url} alt="" />
       </div>
@@ -25,8 +25,8 @@ function Shop({ data,title = "#" }) {
       </div>
       <div className=''>
        {data && data.id ? (
-         <a href={`/${data.id}`}><Button title={title} link={`/checkout?id=${data.id}`} /></a>
-       ):<Button title={title} link={`/checkout?id=${data.id}`} />}
+         <a href={`/${data.id}`}><Button title={title} link={`/checkout?id=${data?.id}`} /></a>
+       ):<Button title={title} link={`/checkout?id=${data?.id}`} />}
       </div>
     </div>
   );

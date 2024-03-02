@@ -61,11 +61,11 @@ function Hero3() {
       // opacity: 0,
       // duration: 1,
       // yPercent: -100,
-      ease: 'elastic',
+      // ease: 'elastic',
       scrollTrigger: {
         trigger: ".ss",
-        start: "top 30%",
-        end: "top 10%",
+        start: "top 0%",
+        end: "top -30%",
         target:"body",  // Adjust the end position as needed
         scrub: 5,
       }
@@ -99,6 +99,7 @@ function Hero3() {
 
   return (
     <div className='max-w-screen-xl dd h-[200vh] ss flex flex-col gap-10 mx-auto py-20 mt-20 px-5 md:px-10'>
+      <img src="/src/assets/imgs" alt="" />
       <h1 className='text-center text-3xl md:text-5xl ddd tracking-wider uppercase  '>
         Choose a plan that fits for you
       </h1>
@@ -122,7 +123,7 @@ function Hero3() {
           className={`flex dd gap-5 items-center md:flex-row py-10  shop1 justify-center ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
-            <Shop key={index} title={"more info"}  data={item} />
+            <Shop key={index} title={"more info"} w={"52vw"} data={item} />
           ))}
         </div>
       )}
