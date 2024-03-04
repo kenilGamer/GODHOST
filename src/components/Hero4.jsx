@@ -20,7 +20,17 @@ const Hero4 = () => {
         scrub: 5,
       },
     });
-
+    const tl2 = gsap.timeline({
+      duration:2,
+      scrollTrigger: {
+        trigger: ".hero-section-2", // Use containerRef if applicable
+        start: 'top 50%',
+        end: 'top 60%',
+        // markers: true,
+        // toggleActions: 'play none none reset', 
+        scrub: 5,
+      },
+    });
     tl.from('.hero-section-1 .hero-section-image img', {
       opacity: 0,
       x: -100,
@@ -30,7 +40,7 @@ const Hero4 = () => {
       x: 100,
       duration: 3,
     })
-    tl.from('.hero-section-2 .hero-section-image img', {
+    tl2.from('.hero-section-2 .hero-section-image img', {
       opacity: 0,
       x: 100,
       duration: 3,

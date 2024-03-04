@@ -6,10 +6,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 function Shop({ data,title = "#",w}) {
     gsap.registerPlugin(ScrollTrigger);
     const container = useRef();
-    useGSAP(() => {
-        // ✅ safe, created during execution, selector text scoped
-     
-      });
+useGSAP(() => {
+        // Set up the animation when the component mounts
+        gsap.to(container.current, {duration: 1, yPercent:-20, ease:"power3.out"});
+    }, [container]);
+
 
   return (
     <div className= {`min-w-64 z-20  max-md:w-screen py-10 px-2 flex flex-col justify-center overflow-hidden items-center gap-6 shop`}>

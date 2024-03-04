@@ -63,6 +63,7 @@ function Hero3() {
       // duration: 1,
       // yPercent: -100,
       // ease: 'elastic',
+      // y:-100,
       scrollTrigger: {
         trigger: ".ss",
         start: "top 0%",
@@ -77,7 +78,9 @@ function Hero3() {
       x: "+=100%",
       // scrollBehavior:  "smooth",
       rotation: 2,
-      // duration: 1,
+      duration: 1,
+      delay: 0.4,
+      // y: -200,
       stagger: 0.5,
       scrollTrigger: {
         trigger: container.current,
@@ -100,7 +103,7 @@ function Hero3() {
   };
 
   return (
-    <div className='max-w-screen-xl z-20  dd min-h-[200vh] ss flex  flex-col gap-10 mx-auto max:py-0 px-5 md:px-10'>
+    <div className=' w-full z-20  dd min-h-[200vh] ss flex  flex-col gap-10 mx-auto max:py-0 px-5 md:px-10'>
       <img src="/src/assets/imgs" alt="" />
       <h1 className='text-center text-3xl  md:text-5xl ddd tracking-wider uppercase  '>
         Choose a plan that fits for you
@@ -122,7 +125,7 @@ function Hero3() {
         // Render grid for larger screens
         <div
         ref={container}
-          className={`w-screen flex dd gap-20 z-10 items-center md:flex-row py-20  shop1 justify-center ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
+          className={`w-full flex py-32 dd gap-20 z-10 items-cente justify-center rmd:flex-row  shop1  ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
             <Shop key={index} title={"more info"} w={"52vw"} data={item} />
