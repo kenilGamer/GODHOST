@@ -30,6 +30,7 @@ function Hero3() {
       list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],
       id: "websites"
     },
+    
     // {
     //   url: "/src/assets/imgs/price1.svg",
     //   title: "BOTS-PLANS",
@@ -74,12 +75,13 @@ function Hero3() {
     gsap.from(container.current, {
       // transform: "translateX(110%)",
       x: "+=100%",
-      // rotation: 20,
+      // scrollBehavior:  "smooth",
+      rotation: 2,
       // duration: 1,
       stagger: 0.5,
       scrollTrigger: {
         trigger: container.current,
-        start: 'top 10%',
+        start: 'top 0%',
         end: 'top -50%',
         target:"body",  // Adjust the end position as needed
         scrub: 3,
@@ -98,12 +100,12 @@ function Hero3() {
   };
 
   return (
-    <div className='max-w-screen-xl dd h-[200vh] ss flex flex-col gap-10 mx-auto py-20 mt-20 px-5 md:px-10'>
+    <div className='max-w-screen-xl z-20  dd min-h-[200vh] ss flex  flex-col gap-10 mx-auto max:py-0 px-5 md:px-10'>
       <img src="/src/assets/imgs" alt="" />
-      <h1 className='text-center text-3xl md:text-5xl ddd tracking-wider uppercase  '>
+      <h1 className='text-center text-3xl  md:text-5xl ddd tracking-wider uppercase  '>
         Choose a plan that fits for you
       </h1>
-      <p className='text-center max-w-full mx-auto px-2 ddd'>
+      <p className='text-center max-w-full mx-auto px-2  ddd'>
         Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We`re here to help you succeed.
       </p>
 
@@ -111,7 +113,7 @@ function Hero3() {
         // Render slider for mobile view with text-center class
         <Slider {...sliderSettings} className="mt-5 flex items-center justify-center  mb-5 text-center">
           {data.map((item, index) => (
-            <div key={index} className=''>
+            <div key={index} className='w-full'>
               <Shop data={item} />
             </div>
           ))}
@@ -120,7 +122,7 @@ function Hero3() {
         // Render grid for larger screens
         <div
         ref={container}
-          className={`flex dd gap-5 items-center md:flex-row py-10  shop1 justify-center ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
+          className={`w-screen flex dd gap-20 z-10 items-center md:flex-row py-20  shop1 justify-center ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
             <Shop key={index} title={"more info"} w={"52vw"} data={item} />

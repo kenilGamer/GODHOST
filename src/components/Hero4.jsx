@@ -10,12 +10,14 @@ const Hero4 = () => {
 
   useGSAP(() => {
     const tl = gsap.timeline({
+      duration:2,
       scrollTrigger: {
-        scroll: 'body',
-        trigger: '.hero-section-1',
+        trigger: containerRef.current, // Use containerRef if applicable
         start: 'top 20%',
-        end: 'top 20%',
-        scrub: 2,
+        end: 'top 50%',
+        // markers: true,
+        toggleActions: 'play none none reset',
+        scrub: 5,
       },
     });
 
@@ -23,26 +25,24 @@ const Hero4 = () => {
       opacity: 0,
       x: -100,
       duration: 3,
+    }).from('.hero-section-1 .hero-section-content ', {
+      opacity: 0,
+      x: 100,
+      duration: 3,
     })
-      .from('.hero-section-2', {
-        opacity: 0,
-        x: 100,
-        duration: 3,
-      })
-      .from('.hero-section-3 .hero-section-image img', {
-        opacity: 0,
-        x: 100,
-        duration: 3,
-      })
-      .from('.hero-section-4 .hero-section-content', {
-        opacity: 0,
-        y: 100,
-        duration: 3,
-      });
+    tl.from('.hero-section-2 .hero-section-image img', {
+      opacity: 0,
+      x: 100,
+      duration: 3,
+    }).from('.hero-section-2 .hero-section-content', {
+      opacity: 0,
+      y: 100,
+      duration: 3,
+    });
   }, []);
 
   return (
-    <div className="w-full dd min-h-screen add flex flex-col p-5 md:p-20">
+    <div ref={containerRef} className="w-full z-50 dd min-h-screen add flex items-center justify-center flex-col p-5 max-md:p-20">
       <HeroSection
         title="Dedicated support"
         description="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
@@ -52,14 +52,13 @@ const Hero4 = () => {
         show={false}
       />
       <HeroSection
-      buttonTitle="join discord"
+        buttonTitle="Join Discord"
         title="Global server location"
         description="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"
         image="/src/assets/imgs/about2.png"
-        className="hero-section-2 hero-section-reverse "
+        className="hero-section-2 hero-section-reverse"
         show={true}
       />
-      
     </div>
   );
 };
