@@ -9,22 +9,10 @@ function Cards({ data }) {
      const container = useRef();
     
      useGSAP(() => {
-         gsap.from(".sdsd", {
-           opacity:1,
-          //  x:100,
-          //  transform:"translateX(390%)",
-           duration: 3,
-           stagger:0.5,
-           scrollTrigger: {
-             scroll: "body",
-             trigger: ".sdsd",
-             start: 'top 0%', // Adjust the start position as needed
-             end: 'top 50%',
-           },
-         });
+         
        });
   return (
-    <div className=' w-[28vw] max-md:w-full items-center justify-center flex gap-1 flex-col'>
+    <div className=' w-[28vw] .sdsd max-md:w-full items-center justify-center flex gap-1 flex-col'>
       <div className='flex items-center justify-center'>
         <img src={data.url} alt="ss" />
       </div>

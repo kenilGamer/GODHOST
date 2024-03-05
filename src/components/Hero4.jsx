@@ -27,7 +27,7 @@ const Hero4 = () => {
         start: 'top 50%',
         end: 'top 60%',
         // markers: true,
-        // toggleActions: 'play none none reset', 
+        toggleActions: 'play none none reset', 
         scrub: 5,
       },
     });

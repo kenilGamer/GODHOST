@@ -8,7 +8,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 function Hero3() {
-  let data = [
+  const [data, setData] = useState ([
     {
       url: "/src/assets/imgs/price1.svg",
       title: "INTEL-PLANS",
@@ -38,7 +38,8 @@ function Hero3() {
     //   list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],
     //   id: "bots"
     // },
-  ];
+  ]);
+
   gsap.registerPlugin(ScrollTrigger);
   const container = useRef();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -77,11 +78,11 @@ function Hero3() {
       // transform: "translateX(110%)",
       x: "+=100%",
       // scrollBehavior:  "smooth",
-      rotation: 2,
-      duration: 1,
-      delay: 0.4,
+      // rotation: 2,
+      // duration: 1,
+      // delay: 0.4,
       // y: -200,
-      stagger: 0.5,
+      // stagger: 0.5,
       scrollTrigger: {
         trigger: container.current,
         start: 'top 0%',

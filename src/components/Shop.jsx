@@ -4,16 +4,23 @@ import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 function Shop({ data,title = "#",w}) {
+  const shopContainer = useRef(null);
+  // Use the `useGSAP` hook to get a GSAP timeline.
+  const tl = useGSAP((t) => t, [shopContainer]);
+  
+  if (typeof window !== "undefined") {
+    gsap.to(window, {scrollTrigger: {trigger: shopContainer.current, start:"top center"}});
+  }
     gsap.registerPlugin(ScrollTrigger);
     const container = useRef();
 useGSAP(() => {
         // Set up the animation when the component mounts
-        gsap.to(container.current, {duration: 1, yPercent:-20, ease:"power3.out"});
+        // gsap.to(container.current, {duration: 1, yPercent:-20, ease:"power3.out"});
     }, [container]);
 
 
   return (
-    <div className= {`min-w-64 z-20  max-md:w-screen py-10 px-2 flex flex-col justify-center overflow-hidden items-center gap-6 shop`}>
+    <div ref={shopContainer} className= {`min-w-64 z-20  max-md:w-screen py-10 px-2 flex flex-col justify-center overflow-hidden items-center gap-6 shop`}>
       <div className='flex items-center justify-center p-5'>
         <img src={data?.url} alt="" />
       </div>
