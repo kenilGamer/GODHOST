@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import { useGSAP } from '@gsap/react';
-
+import PropTypes from 'prop-types';
 function Navbar({ timeline }) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -46,5 +46,7 @@ function Navbar({ timeline }) {
     </div>
   );
 }
-
+Navbar.propTypes = {
+  timeline: PropTypes.object.isRequired,
+};
 export default Navbar;

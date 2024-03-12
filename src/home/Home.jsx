@@ -1,11 +1,13 @@
-/* eslint-disable no-unused-vars */
-import React, { useRef } from 'react'
-import Navbar from '../components/Navbar'
-import Hero1 from '../components/Hero1'
-import Hero2 from '../components/Hero2'
-import Hero3 from '../components/Hero3'
-import Hero4 from '../components/Hero4'
-import Footer from '../components/Footer'
+import React, { lazy, Suspense, useRef } from 'react';
+import Navbar from '../components/Navbar';
+import Hero1 from '../components/Hero1';
+import Hero2 from '../components/Hero2';
+import Hero3 from '../components/Hero3';
+import Hero4 from '../components/Hero4';
+import Footer from '../components/Footer';
+// import { FaCircleArrowUp } from 'react-icons/fa6';
+const LazyComponent = lazy(() => import('./LazyComponent '));
+
 import LocomotiveScroll from 'locomotive-scroll';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
@@ -18,14 +20,30 @@ function home() {
   const tl = gsap.timeline();
 
   useGSAP(() => {
-    tl.from(".nav1 h1, .nav a, .hero-l, .hero-r img", {
+    tl.from(".nav1 h1, .nav a ", {
       opacity: 0,
       y: -60,
       x: (target, index) => (index % 2 === 0 ? -60 : 90),
       duration: 1,
       stagger: 0.3,
     });
+    tl.from(".hero-l",{
+      opacity: 0,
+      x: -60,
+      // x: (target, index) => (index % 2 === 0 ? -60 : 90),
+      duration: 1,
+      stagger: 0.3,
+    }
+    );
 
+    tl.from(".hero-r img",{
+      opacity: 0,
+      scale: 0.5,
+      // x: (target, index) => (index % 2 === 0 ? -60 : 90),
+      duration: 1,
+      stagger: 0.3,
+    }
+    );
     gsap.to(".nav-full", {
       backgroundColor: "#4c1e51",
       scrollTrigger: {

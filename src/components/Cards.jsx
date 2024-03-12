@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../assets/imgs/about1.png'
+import img from '../../public/imgs/about1.png'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
 import gsap from 'gsap';

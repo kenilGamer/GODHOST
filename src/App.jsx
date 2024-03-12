@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Home from './home/Home'
 import { Route, Router, Routes } from 'react-router-dom'
 import Signup from './pages/Signup'
@@ -11,6 +11,7 @@ import Bots from './pages/hostings/bots'
 import Rayzer from './pages/hostings/rayzer'
 import LocomotiveScroll from 'locomotive-scroll'
 function App() {
+
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
       autoResize: true,
@@ -29,8 +30,22 @@ function App() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     },
   });
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    // Clean up the timer on component unmount
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className='w-full min-h-screen text-white bg-[#2d0a31] select-none'>
+       {loading ? (
+        <div className=' h-screen w-full bg-slate-50 flex items-center justify-center'>
+          <img  src="/src/assets/imgs/Animation - 1709909279060 (1).gif" alt="" />
+        </div>
+      ) : 
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/websites' element={<Websites/>} />
@@ -39,7 +54,7 @@ function App() {
         <Route path='/intel' element={<Intel/>} />
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Login/>} />
-      </Routes>
+      </Routes>}
     </div>
   )
 }

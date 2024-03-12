@@ -10,21 +10,21 @@ import gsap from 'gsap';
 function Hero3() {
   const [data, setData] = useState ([
     {
-      url: "/src/assets/imgs/price1.svg",
+      url: "../../public/imgs/price1.svg",
       title: "INTEL-PLANS",
       money: "350",
       list: ['8 Gb ram ', '200% CPU', '4 backups', '35 gb storage'],
       id: "intel"
     },
     {
-      url: "/src/assets/imgs/price2.svg",
+      url: "../../public/imgs/price2.svg",
       title: "RAYZER-plans",
       money: "599",
       list: ['8 Gb ram ', '100% CPU', '4 backups', '25 gb storage'],
       id: "rayzer"
     },
     {
-      url: "/src/assets/imgs/price3.svg",
+      url: "../../public/imgs/price3.svg",
       title: "WEB-PLANS",
       money: "450",
       list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],
@@ -32,7 +32,7 @@ function Hero3() {
     },
     
     // {
-    //   url: "/src/assets/imgs/price1.svg",
+    //   url: "../../public/imgs/price1.svg",
     //   title: "BOTS-PLANS",
     //   money: "150",
     //   list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],
@@ -104,8 +104,8 @@ function Hero3() {
   };
 
   return (
-    <div className=' w-full z-20  dd min-h-[200vh] ss flex  flex-col gap-10 mx-auto max:py-0 px-5 md:px-10'>
-      <img src="/src/assets/imgs" alt="" />
+    <div className=' w-full z-20  dd min-h-[200vh] max-md:h-[60vw] ss flex  flex-col gap-10 mx-auto max:py-0 px-5 md:px-10'>
+      <img src="../../public/imgs" alt="" />
       <h1 className='text-center text-3xl  md:text-5xl ddd tracking-wider uppercase  '>
         Choose a plan that fits for you
       </h1>
@@ -115,10 +115,10 @@ function Hero3() {
 
       {isMobile ? (
         // Render slider for mobile view with text-center class
-        <Slider {...sliderSettings} className="mt-5 flex items-center justify-center  mb-5 text-center">
+        <Slider {...sliderSettings} className=" flex items-center justify-center  mt-52 text-center">
           {data.map((item, index) => (
             <div key={index} className='w-full'>
-              <Shop data={item} />
+              <Shop className={`max-md:w-screen`} data={item} />
             </div>
           ))}
         </Slider>

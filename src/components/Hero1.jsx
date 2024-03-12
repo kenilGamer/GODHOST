@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/imgs/hero_right.png';
+import heroImage from '../../public/imgs/hero_right.png';
 import Button from './Button';
 import Navbar from './Navbar';
 
