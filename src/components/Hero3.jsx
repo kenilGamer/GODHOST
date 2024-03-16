@@ -17,14 +17,14 @@ function Hero3() {
       id: "intel"
     },
     {
-      url: "../../public/imgs/price2.svg",
+      url: "/public/imgs/price2.svg",
       title: "RAYZER-plans",
       money: "599",
       list: ['8 Gb ram ', '100% CPU', '4 backups', '25 gb storage'],
       id: "rayzer"
     },
     {
-      url: "../../public/imgs/price3.svg",
+      url: "/public/imgs/price3.svg",
       title: "WEB-PLANS",
       money: "450",
       list: ['4 Gb ram ', '100% CPU', '4 backups', 'full storage'],

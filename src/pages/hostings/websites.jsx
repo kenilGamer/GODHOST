@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useState } from 'react';
+import Shop from '../../components/Shop';
+import gsap from 'gsap';
 
 function Websites() {
   let data = [
