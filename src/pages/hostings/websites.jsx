@@ -11,7 +11,7 @@ function Websites() {
       title1 : "buy now"
     },
     {
-      url: "../../public/imgs/price2.svg",
+      url: "/public/imgs/price2.svg",
       title: "IRON PLAN",
       money: "499",
       list: ['12 Gb ram ', '350% CPU', '4 backups', '50 gb storage','15 TB Traffic',"Intel® Xeon® Gold 6150"],
