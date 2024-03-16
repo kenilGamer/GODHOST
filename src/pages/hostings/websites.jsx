@@ -3,7 +3,7 @@ import React from 'react'
 function Websites() {
   let data = [
     {
-      url: "/src/assets/imgs/price1.svg",
+      url: "../../public/imgs/price1.svg",
       title: "COAL PLAN",
       money: "299",
       list: ['6 Gb ram ', '100% CPU', '4 backups', '35 gb storage','5 TB Traffic',"Intel® Xeon® Gold 6150"],
@@ -11,7 +11,7 @@ function Websites() {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price2.svg",
+      url: "../../public/imgs/price2.svg",
       title: "IRON PLAN",
       money: "499",
       list: ['12 Gb ram ', '350% CPU', '4 backups', '50 gb storage','15 TB Traffic',"Intel® Xeon® Gold 6150"],
@@ -19,7 +19,7 @@ function Websites() {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price3.svg",
+      url: "../../public/imgs/price3.svg",
       title: " GOLD PLAN",
       money: "699",
       list: ['16 Gb ram ', '400% CPU', '4 backups', '60 gb storage','20 TB Traffic',"Intel® Xeon® Gold 6150"],
@@ -27,7 +27,7 @@ function Websites() {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price1.svg",
+      url: "../../public/imgs/price1.svg",
       title: "EMERALD PLAN",
       money: "999",
       list: ['24 Gb ram ', '600% CPU', '8 backups', '100 bg storage','25 TB Traffic',"Intel® Xeon® Gold 6150"],

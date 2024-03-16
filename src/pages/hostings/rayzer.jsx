@@ -5,7 +5,7 @@ import Shop from '../../components/Shop';
 function Rayzer () {
   let data = [
     {
-      url: "/src/assets/imgs/price1.svg",
+      url: "../../public/imgs/price1.svg",
       title: "COAL PLAN",
       money: "399",
       list: ['4 Gb ram ', '100% CPU', '4 backups', '35 gb storage','4 TB Traffic',"AMD Ryzen ™ 9 5900X"],
@@ -13,7 +13,7 @@ function Rayzer () {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price2.svg",
+      url: "../../public/imgs/price2.svg",
       title: "IRON PLAN",
       money: "499",
       list: ['6 Gb ram ', '200% CPU', '4 backups', '50 gb storage','4 TB Traffic',"AMD Ryzen ™ 9 5900X"],
@@ -21,7 +21,7 @@ function Rayzer () {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price3.svg",
+      url: "../../public/imgs/price3.svg",
       title: " GOLD PLAN",
       money: "699",
       list: ['8 Gb ram ', '200% CPU', '4 backups', '75 gb storage','4 TB Traffic',"AMD Ryzen ™ 9 5900X"],
@@ -29,7 +29,7 @@ function Rayzer () {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price1.svg",
+      url: "../../public/imgs/price1.svg",
       title: "EMERALD PLAN",
       money: "999",
       list: ['12 Gb ram ', '300% CPU', '8 backups', '100 bg storage','25 TB Traffic',"AMD Ryzen ™ 9 5900X"],
@@ -37,7 +37,7 @@ function Rayzer () {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price2.svg",
+      url: "../../public/imgs/price2.svg",
       title: "DIMOND PLAN",
       money: "1599",
       list: ['16 Gb ram ', '400% CPU', '10 backups', '120 gb storage','30 TB Traffic',"AMD Ryzen ™ 9 5900X"],
@@ -45,7 +45,7 @@ function Rayzer () {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price3.svg",
+      url: "../../public/imgs/price3.svg",
       title: "DIMOND PLAN",
       money: "1999",
       list: ['24 Gb ram ', '600% CPU', '15 backups', '160 gb storage','35 TB Traffic',"AMD Ryzen ™ 9 5900X"],
@@ -53,7 +53,7 @@ function Rayzer () {
       title1 : "buy now"
     },
     {
-      url: "/src/assets/imgs/price1.svg",
+      url: "../../public/imgs/price1.svg",
       title: "END PLAN",
       money: "2499",
       list: ['32 Gb ram ', '600% CPU', '20 backups', '200 gb storage','40 TB Traffic',"AMD Ryzen ™ 9 5900X"],

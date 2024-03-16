@@ -43,7 +43,7 @@ function App() {
     <div className='w-full min-h-screen text-white bg-[#2d0a31] select-none'>
        {loading ? (
         <div className=' h-screen w-full bg-slate-50 flex items-center justify-center'>
-          <img  src="/src/assets/imgs/Animation - 1709909279060 (1).gif" alt="" />
+          <img  src="../public/imgs/Animation - 1709909279060 (1).gif" alt="" />
         </div>
       ) : 
       <Routes>
