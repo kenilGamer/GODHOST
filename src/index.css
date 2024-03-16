@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: godcraft;
-  src: url(./assets/st.ttf);
+  src: url(/st.ttf);
 }
 @font-face {
   font-family: godcraft22;

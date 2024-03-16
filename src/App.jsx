@@ -12,20 +12,6 @@ import Rayzer from "./pages/hostings/rayzer";
 import LocomotiveScroll from "locomotive-scroll";
 function App() {
 
-  const [scrollInstance, setScrollInstance] = useState(null);
-  // When the component mounts, create an instance of Locomotive Scroll.
-  useEffect(() => {
-    if (!scrollInstance) {
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),  
-        smooth: true,                        
-      });
-      setScrollInstance(scroll);
-    } else return;
-    
-    // Clean up on unmount
-    return () => scrollInstance.destroy();
-  }, [scrollInstance]);
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
       autoResize: true,

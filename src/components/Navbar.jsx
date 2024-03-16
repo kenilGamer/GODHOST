@@ -19,7 +19,7 @@ function Navbar({ timeline }) {
             alt=""
           />
         </h1>
-        <h1 className='text-xl dd'>GODCRAFT</h1>
+        <h1 className='text-xl dd font-black'>GODCRAFT</h1>
       </div>
 
       {/* Responsive Menu Button */}
