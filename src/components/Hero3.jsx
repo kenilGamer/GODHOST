@@ -39,7 +39,6 @@ function Hero3() {
     //   id: "bots"
     // },
   ]);
-
   gsap.registerPlugin(ScrollTrigger);
   const container = useRef();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
