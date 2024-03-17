@@ -35,7 +35,7 @@ function Signup() {
 
   return (
     <div className='w-full dd h-screen flex items-center object-cover p-10 justify-center'>
-      <img src="../../public/imgs/cintaku_8.jpg" className='fixed w-screen h-screen' alt="" />
+      <img src="/imgs/cintaku_8.jpg" className='fixed w-screen h-screen' alt="" />
       <div className='z-50 text-white p-10'>
         <h1 className="text-6xl max-md:text-xl mt-5 text-center">Sign Up</h1>
         <form action="#" method="post" onSubmit={handleSubmit} className="flex flex-col text-black font-mono gap-y-2 w-96 max-md:w-52 mt-1">
