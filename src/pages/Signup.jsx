@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/Button';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function Signup() {
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
@@ -59,9 +59,10 @@ function Signup() {
               <Button title="Register" />
             </button>
             <h1 className='flex items-center text-center justify-center text-white dd'>or</h1>
-            <a href='/login' className="text-white rounded">
+            <Link
+             to='/login' className="text-white rounded">
               <Button title='Login' />
-            </a>
+            </Link>
           </div>
         </form>
       </div>

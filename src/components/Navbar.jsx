@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from './Button';
 import { useGSAP } from '@gsap/react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 function Navbar({ timeline }) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -35,9 +36,9 @@ function Navbar({ timeline }) {
             {item}
           </a>
         ))}
-        <a href="/signup">
+        <Link to="/signup">
           <Button className="nav" />
-        </a>
+        </Link>
         {/* <a href="#" className='dd uppercase'>Sign in</a> */}
       </div>
       </div>
