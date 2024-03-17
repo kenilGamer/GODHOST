@@ -13,6 +13,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { FaCircleArrowUp } from "react-icons/fa6";
+import CanvasAnimation from '../components/CanvasAnimation';
 
 function home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -75,11 +76,13 @@ function home() {
   };
   return (
    <div>
+    <CanvasAnimation/>
     <div className=' top right-10 bottom-10 z-[9999] fixed hover:scale-110 transform'>
   <button  onClick={totop} className="flex items-center justify-center w-full h-full text-4xl z-50  text-[#d082fd] overflow-hidden  ">
     <FaCircleArrowUp className=' bg-white  rounded-full' />
   </button>
 </div>
+
     <div className='w-full min-h-screen select-none bg-[#2d0a31] text-white overflow-x-hidden'>
       <Navbar timeline={tl} />
       <Hero1 timeline={tl} />
