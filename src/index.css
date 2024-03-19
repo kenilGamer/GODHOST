@@ -49,7 +49,7 @@
 
 }
 .shop{
-  background: #4c1e51
+  background: #481c4d9d
   /* transform: translateX(-200%); */
 }
 
@@ -60,6 +60,9 @@
   /* background: #20dbfc4f; */
   /* backdrop-filter:  blur(5px) brightness(100%) contrast(95%); */
   border-radius: 50px 0px 50px 0px ;
+}
+.shop:hover{
+  box-shadow: 0 0 70px #6a1e7e;
 }
 /* .shop1{
   transform: translateX(-200%);

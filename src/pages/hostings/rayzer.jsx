@@ -92,7 +92,7 @@ function Rayzer () {
       </h1>
         <div
         // ref={container}
-          className={` flex dd gap-10 max-md:w-[100vw] flex-wrap items-center justify-center  py-10 shop1 ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
+          className={` flex dd gap-10 z-10 max-md:w-[100vw] flex-wrap items-center justify-center  py-10 shop1 ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
             <Shop key={index} title={item.title1}  data={item} />

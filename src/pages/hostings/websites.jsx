@@ -63,13 +63,13 @@ function Websites() {
   return (
     <div>
     
-      <div className='max-w-screen-xl dd min-h-screen ss flex flex-col gap-1 mx-auto  px-5 md:px-10'>
+      <div className='max-w-screen-xl dd z-20 min-h-screen ss flex flex-col gap-1 mx-auto  px-5 md:px-10'>
       <h1 className='text-center text-3xl md:text-5xl ddd tracking-wider uppercase  '>
       Intel  plans list
       </h1>
         <div
         // ref={container}
-          className={` flex dd gap-10 max-md:w-[100vw] flex-wrap items-center justify-center  py-10 shop1 ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
+          className={` flex dd z-10 gap-10 max-md:w-[100vw] flex-wrap items-center justify-center  py-10 shop1 ${isMobile ? 'opacity-75' : 'opacity-100 transition-opacity duration-500'}`}
         >
           {data.map((item, index) => (
             <Shop key={index} title={item.title1}  data={item} />

@@ -10,6 +10,7 @@ import Websites from "./pages/hostings/websites";
 import Bots from "./pages/hostings/bots";
 import Rayzer from "./pages/hostings/rayzer";
 import LocomotiveScroll from "locomotive-scroll";
+import CanvasAnimation from "./components/CanvasAnimation";
 function App() {
 
   const locomotiveScroll = new LocomotiveScroll({
@@ -40,13 +41,18 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="w-full min-h-screen text-white bg-[#2d0a31] select-none">
+    <div>
+      
+      <div className="w-full min-h-screen text-white bg-[#2d0a31] select-none">
       {loading ? (
         <div className=" h-screen w-full bg-slate-50 flex items-center justify-center">
           <img src="/imgs/Animation - 1709909279060 (1).gif" alt="" />
         </div>
       ) : (
+        <div>
+          <CanvasAnimation/>
         <Routes>
+          
           <Route path="/" element={<Home />} />
           <Route path="/websites" element={<Websites />} />
           <Route path="/rayzer" element={<Rayzer />} />
@@ -55,7 +61,9 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        </div>
       )}
+    </div>
     </div>
   );
 }

@@ -52,7 +52,7 @@ const Hero4 = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full z-50 dd min-h-screen add flex items-center justify-center flex-col p-5 max-md:p-20">
+    <div ref={containerRef} className="w-full dd min-h-screen add flex items-center justify-center flex-col p-5 max-md:p-20">
       <HeroSection
         title="Dedicated support"
         description="Supercharge your WordPress hosting with detailed website analytics, marketing tools. Our experts are just part of the reason Bluehost is the ideal home for your WordPress website. We're here to help you succeed!"

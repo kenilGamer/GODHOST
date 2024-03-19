@@ -35,8 +35,15 @@ function home() {
       duration: 1,
       stagger: 0.3,
     }
+    );    
+    tl.from(".axcx  ",{
+      opacity: 0,
+      x: -60,
+      // x: (target, index) => (index % 2 === 0 ? -60 : 90),
+      duration: 1,
+      stagger: 0.3,
+    }
     );
-
     tl.from(".hero-r img",{
       opacity: 0,
       scale: 0.5,
@@ -76,7 +83,7 @@ function home() {
   };
   return (
    <div>
-    <CanvasAnimation/>
+    
     <div className=' top right-10 bottom-10 z-[9999] fixed hover:scale-110 transform'>
   <button  onClick={totop} className="flex items-center justify-center w-full h-full text-4xl z-50  text-[#d082fd] overflow-hidden  ">
     <FaCircleArrowUp className=' bg-white  rounded-full' />

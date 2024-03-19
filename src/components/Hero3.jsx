@@ -87,7 +87,7 @@ function Hero3() {
         start: "top 0%",
         end: "top -50%",
         target: "body", // Adjust the end position as needed
-        scrub: 3,
+        scrub: 0.5,
         pin: true,
       },
     });
